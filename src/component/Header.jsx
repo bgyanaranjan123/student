@@ -1,20 +1,21 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import "./Header.css"
+import "./Header.css";
 
 function Header() {
   return (
-    <header>
-      <h2>My Website</h2>
+    <header className="header">
+      <div className="logo">QuickBite</div>
 
       <nav>
-        <Link to="/">Home</Link> |{" "}
-        <Link to="/about">About</Link> |{" "}
-        <Link to="/contact">Contact</Link>
-        <Link to="/service">Service</Link>
+        <ul>
+          <li>Home</li>
+          <li>Resturent</li>
+          <li>Offers</li>
+          <li>About</li>
+          
+        </ul>
       </nav>
 
-      <hr />
+      <button className="signin">Sign In</button>
     </header>
   );
 }
